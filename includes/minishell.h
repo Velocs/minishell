@@ -6,7 +6,7 @@
 /*   By: aliburdi <aliburdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/18 22:12:54 by aliburdi          #+#    #+#             */
-/*   Updated: 2023/02/22 17:20:10 by aliburdi         ###   ########.fr       */
+/*   Updated: 2023/02/22 17:26:19 by aliburdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,8 @@ typedef struct s_struct
 	int		quotes;
 	pid_t	pid;
 }				t_struct;
+
+void	initializer(t_struct *m);
+int		my_pwd(void);
 
 #endif

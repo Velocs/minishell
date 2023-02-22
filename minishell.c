@@ -6,7 +6,7 @@
 /*   By: aliburdi <aliburdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/22 07:18:33 by aliburdi          #+#    #+#             */
-/*   Updated: 2023/02/22 17:20:14 by aliburdi         ###   ########.fr       */
+/*   Updated: 2023/02/22 17:26:56 by aliburdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	my_pwd(void)
 	char	path[1024];
 
 	if (getcwd(path, sizeof(path)) != NULL)
-		printf("Current working directory: %s\n", path);
+		printf("%s\n", path);
 	else
 	{
 		perror("getcwd() error");
@@ -97,7 +97,7 @@ Il codice usa anche la funzione "malloc" per allocare memoria dinamicamente per 
 				if (ft_strcmp(m.args[0], "pwd") == 0) //vedo se la prima istruzione é pwd provo a eseguirla se non va c'é il perror
 				{
 					if (getcwd(path, sizeof(path)) != NULL)
-						printf("Current working directory: %s\n", path);
+						printf("%s\n", path);
 					else
 					{
 						perror("getcwd() error");
